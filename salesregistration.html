@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<he>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sales registration form</title>
+
+      </head>
+      <style>
+            .body{
+                  margin: 0%;
+                  padding: 0%;
+            }
+            .container{
+                  width: 100vh;
+                  display: flex;
+                  flex-direction: row;
+                  height: 100vh;
+                  column-gap: 10px;
+                  
+            }
+            .sidebar{
+                  flex: 1;
+                  background: white;
+                  padding: 2px;
+                  border-right: 1px solid black;
+                  width: 100%;
+
+            }
+            .menu li{
+                  padding: 12px;
+                  background: grey;
+                  margin-bottom: 0;
+                  border: 1px solid;
+                  cursor: pointer;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: flex-start;
+            }
+            .content{
+                  flex: 2;
+                  display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+                  border: 1px solid black;
+                  border-radius: 6px;
+                  margin: 5px;
+                  padding: 5px;
+            }
+            .input-container{
+                  display: flex;
+                  background-color: white
+                   
+                  
+            }
+            .input-section{
+                  display: flex;
+                  flex-direction: column;
+                  flex: 1;
+                  padding: 5px;
+                
+                  
+
+            }
+            .field{
+                  display: flex;
+                  flex-direction: column;
+                  padding: 6px;
+            
+            }
+            .field h1{
+                  font-weight: bold;
+                  padding: 0 10px;
+                   align-self: center;
+            }
+            input select{
+                  padding: 8px;
+                  border: 1px solid;
+                  border-radius: 4px;
+                  width: 100%;
+            }
+            .grid-container{
+                  display: flex;
+                  gap: 2px;
+                  margin: 2px;
+                  width: 50%;
+            }
+            .buttons{
+                  display: flex;
+                  justify-content: space-around;
+                  margin: 5px;
+                  padding: 2px;
+            }
+            .Cancel{
+                  background: #e0e0e0;
+                  border: aliceblue;
+                  color: #3b5fbf;
+                  padding: 10px 20px;
+                  border-radius: 3px;
+            }
+            .Submit{
+                  background: #3b5fbf;
+                  color: white;
+                  border: aliceblue;
+                  padding: 10px 20px;
+                  border-radius: 3px;
+                  
+            }
+
+      </style>
+      <body>
+            <div class="container">
+                  <div class="sidebar">
+                       <div class="profile" style="text-align: center;margin-bottom: 30px;">
+                        <div class="avatar" style="width: 60px;height: 60px;border-radius: 50%;margin: auto;margin-bottom: 10px;"></div>
+                        <p>Your full name</p>
+                        <p>Role in the system</p>
+                       </div>
+
+                       <ul class="menu" style="list-style: none;">
+                        <li>Dashboard</li>
+                        <li>Sales Management</li>
+                        <li>Supplier Management</li>
+                        <li>Stock Management</li>
+                        <li>Transport management</li>
+                       </ul>
+
+                  </div>
+                  
+                  
+                  <div class="content">
+                            
+<!--section 1-->
+                  <section class="field">
+                        <h1>
+                              Sales Registration
+                        </h1>
+                        <div class="input-container">
+                        <div class="input-section">
+                              <label for="salesdate">Sales Date</label>
+                              <input type="date">
+                        </div>
+
+                        <div class="input-section">
+                              <label for="salesperson">Sales Person</label>
+                              <select name="" id="">
+                                    <option value=""> Select sales representative</option>
+                                    <option value="1">Nansubuga Marie</option>
+                                    <option value="2">Nakanwagi Muniirah</option>
+                                    <option value="3">Kassozi Rashid</option>
+                                    <option value="4">Kiramba Saidi</option>
+                              </select>
+                              </div>
+                              </div>
+                        
+                  </section>
+<!--section 2-->
+                  <section class="field">
+                        <h1>Customer Details</h1>
+                        <div class="input-container">
+                        <div class="input-section">
+                              <label for="name"> Name</label>
+                              <input type="text" placeholder="Enter full name">
+                              </div>
+                        <div class="input-section">
+                              <label for="phone number">Phone number</label>
+                              <input type="text" placeholder="Enter phone number">
+                        </div>
+                         </div>
+
+                         <div class="input-container">
+                              <div class="input-section">
+                                    <label for="E-mail">E-mail address</label>
+                                    <input type="email" placeholder="Enter e-mail address">
+                              </div>
+                              <div class="input-section">
+                                    <label for="type">Type</label>
+                                    <select>
+                                          <option> Select Customer type</option>
+                                    </select>
+                              </div>
+                         </div>
+                         </section>
+<!--section 3-->
+                 
+                        <section class="field">          
+                         <h1>Items</h1>
+                         <div class="input-container">
+                              <div class="grid-container">
+
+                              <input type="text" placeholder="Pdt ID">
+
+                              <input type="number" placeholder="Quantity">
+                              
+                              <input type="number" placeholder="Unit Price">
+                         </div>
+                         </div>
+                         <div class="input-container">
+                              <div class="grid-container">      
+                              <input type="text" placeholder="Pdt ID">
+                              <input type="number" placeholder="Quantity">
+   
+                              <input type="number" placeholder="Unit Price">
+                         </div>
+                         </div>
+                        </section>
+                                
+                         <div class="buttons">
+                              <button class="Cancel">Cancel</button>
+                              <button class="Submit">Submit</button>
+                         </div>
+                         
+                        </div>
+
+                        </form>
+                  
+      </body>
+</html>
